@@ -1,0 +1,7 @@
+1. We print row wise, from left side of the screen
+2. We have to print spaces in order to create pyramids
+3. Take input of no. of rows to be printed
+4. OUTER LOOP determines ROWS
+5. INNER LOOP determines COLUMNS
+    - in range we tell how many loops to be run -- how many stars to be printed
+    
