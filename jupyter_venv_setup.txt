@@ -1,0 +1,93 @@
+🧠 Step-by-Step (Local + venv)
+1️⃣ Create & activate your virtual environment
+python -m venv venv
+source venv/bin/activate        # Linux / Mac
+# venv\Scripts\activate         # Windows
+
+
+Quick check:
+
+which python
+
+
+It must point to .../venv/bin/python
+
+2️⃣ Install Jupyter + ipykernel inside the venv
+
+This is critical.
+
+pip install jupyter ipykernel
+
+3️⃣ Register this venv as a Jupyter kernel
+
+Run this exact command while venv is active:
+
+python -m ipykernel install --user --name=venv --display-name "Python (venv)"
+
+
+What this does:
+
+--name → internal kernel name
+
+--display-name → what you see in Jupyter UI
+
+4️⃣ Launch Jupyter Notebook
+
+Still inside venv:
+
+jupyter notebook
+
+
+(or)
+
+jupyter lab
+
+5️⃣ Select the correct kernel (VERY IMPORTANT)
+
+In the notebook UI:
+
+Kernel → Change Kernel → Python (venv)
+
+
+✅ Done.
+Now every cell runs using your venv packages.
+
+🔍 Verify It’s Using the Correct venv
+
+Run this inside a notebook cell:
+
+import sys
+sys.executable
+
+
+Expected output:
+
+.../your_project/venv/bin/python
+
+
+If not → wrong kernel selected.
+
+🚨 Common Mistakes (avoid these)
+
+❌ Assuming source venv/bin/activate is enough
+❌ Installing packages globally and wondering why notebook can’t see them
+❌ Running jupyter notebook outside venv
+❌ Forgetting to change kernel in UI
+
+🧩 Bonus: Multiple Projects, Multiple venvs
+
+Best practice:
+
+project_A/
+ ├── venv_A/
+project_B/
+ ├── venv_B/
+
+
+Each venv → its own kernel:
+
+python -m ipykernel install --user --name=projectA --display-name "Python (Project A)"
+python -m ipykernel install --user --name=projectB --display-name "Python (Project B)"
+
+
+Switch kernels → switch environments instantly.
