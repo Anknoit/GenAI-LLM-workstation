@@ -1,12 +1,10 @@
-from fastapi import FastAPI
+from fastapi import FastApi
 
-from typing import Union
+app = FastApi()
 
-app = FastAPI()
 
-@app.get("/")
-def homepage():
-    return {"Welcome to Homepage"}
-k
-@app.get()
-def 
+app.get('/')
+def home():
+    return {'message': "Home page"}
+
+app.get('/about')
