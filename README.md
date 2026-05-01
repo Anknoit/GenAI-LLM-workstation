@@ -3,7 +3,7 @@ A repo for learning and experimenting with GenAI frameworks and tools
 
 # Interview Questions
 
-## GEN AI
+## GEN AI - hashedIn
 1. What are some chunking techniques for long documents?
     - Sliding window
     - Fixed size
@@ -17,7 +17,7 @@ A repo for learning and experimenting with GenAI frameworks and tools
     - It is used to store and retrieve embeddings of text data, which can be used for tasks such as similarity search and clustering.
 4. Leetcode question - https://leetcode.com/problems/alternating-groups-ii/description/
 
-## Numpy, Pandas, Json Handling
+## Numpy, Pandas, Json Handling - Genysys
 Q1. given csv of employee table with employee_id, dept, salary, employee name
 - read data from csv
 - find total no. of employees
@@ -32,3 +32,11 @@ Q2. Given api url (user and their post)
 Q3. given a list comprising of a dictionary with student name and marks
 - write a func that takes in list of data of student info and compares who clears the cuttoff for this (list and cutoff are i/p parameters)
 - return a list with student name, marks obtained if cleared the cuttoff
+
+## FastAPI and LLM (Langchain and Langraph)
+Q1. Diff between Rule Based Chatbot and LLM Chatbot?
+Q2. Diff between Langraph and ADK
+Q3. Getting rule violation when API hit? What could be the reason?
+Q4. How to improve performance for api?
+Q5. How to fine tune an LLM Model
+Q5. Sort int array, print 5 numbers in recursion.
