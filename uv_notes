@@ -2,3 +2,4 @@
 2. pip install uv
 3. uv init - to initialize uv
 4. uv sync - to create virtualenv and create a sync with pyproject.toml(which has dependencies list in it similar to req.txt)
+5. uv add <library name> - to install lib   
