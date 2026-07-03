@@ -23,3 +23,38 @@ def bucket(fruits: list[str, str, str, int], instruction: str|bool)
 
 7. Questions
 - What is oydantic models? is it the url paramaeters? where do we put it??? in app.get() or def function following it?
+
+8. API Flow
+POST 
+JSON Request
+      ↓
+Pydantic Schema
+      ↓
+FastAPI Endpoint
+      ↓
+Database Model
+      ↓
+Database
+
+
+GET
+Database
+      ↓
+Database Model
+      ↓
+Pydantic Response Schema
+      ↓
+JSON Response
+
+#### Database Model - how data will enter DB
+class User(Base):
+    id = Column(Integer, primary_key=True)
+    name = Column(String)
+    email = Column(String)
+
+
+#### API Schema - How Data enter/leaves API
+class UserResponse(BaseModel):
+    id: int
+    name: str
+    email: str
