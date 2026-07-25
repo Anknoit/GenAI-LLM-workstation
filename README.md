@@ -40,3 +40,29 @@ Q3. Getting rule violation when API hit? What could be the reason?
 Q4. How to improve performance for api?
 Q5. How to fine tune an LLM Model
 Q5. Sort int array, print 5 numbers in recursion.
+
+## OTO Capital and C2C Adnaved System AI Engineer
+Q1. How do you validate the response of an LLM and make sure it does not hallucinate?
+
+
+## Some reference from JD
+Experience with cloud platforms (AWS, Azure, or GCP).
+Knowledge of Docker and Kubernetes.
+Experience with FastAPI or Flask.
+Familiarity with Hugging Face Transformers.
+Experience with model deployment and MLOps.
+Exposure to fine-tuning open-source LLMs.
+
+## c2c Advanced System AI Engineer
+1. Whats an MCP?
+2. What are some frameworks for embeddings?
+3. Frameworks for multiagent
+4. Whats a knowledge graph
+5. Whats inference Engine
+6. p-99, p80
+7. top-k, top-b
+8. Explain Tranformer archtiecture
+9. Langraph, and Langsmith
+10. How Vector DB perform efficient searching for embedding values
+11. How and whats ranking of chunks (for better output of RAG)
+12. How can we optimize repeated queries given by user to avoid token waste?
